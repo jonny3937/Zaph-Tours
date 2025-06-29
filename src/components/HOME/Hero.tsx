@@ -1,5 +1,4 @@
 import { Box, Typography, Button } from '@mui/material';
-
 const Hero = () => {
   return (
     <>
@@ -77,5 +76,4 @@ const Hero = () => {
     </>
   );
 };
-
 export default Hero;
