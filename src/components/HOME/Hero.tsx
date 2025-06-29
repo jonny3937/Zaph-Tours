@@ -1,12 +1,10 @@
-
 import { Box, Typography, Button } from '@mui/material';
 
-const Hero  = () => {
+const Hero = () => {
   return (
     <>
       <Box
         sx={{
-        
           top: 0,
           left: 0,
           width: '100vw',
@@ -48,7 +46,6 @@ const Hero  = () => {
         >
           Best Safaris and Adventures
         </Typography>
-
         <Typography
           variant="h6"
           sx={{
@@ -60,7 +57,6 @@ const Hero  = () => {
         >
           Explore the world with us. Discover Kenya's untamed beauty
         </Typography>
-
         <Button
           variant="contained"
           sx={{

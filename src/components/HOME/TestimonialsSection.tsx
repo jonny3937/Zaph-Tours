@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   Container,
   Typography,
@@ -12,22 +12,22 @@ import { MdStarRate } from "react-icons/md";
 const testimonials = [
   {
     quote: 'Zaph Tours made our honeymoon unforgettable! The Mt. Kenya trek was perfectly organized.',
-    name: 'Sarah Johnson',
+    name: 'Loice Wagura',
     country: 'United States',
   },
   {
     quote: 'Exceptional service and knowledgeable guides. Our family safari exceeded all expectations!',
-    name: 'David Kimani',
+    name: 'Francis Kimani',
     country: 'Kenya',
   },
   {
     quote: 'The coastal Kenya package was paradise. Professional, friendly, and truly magical experience.',
-    name: 'Emma Wilson',
+    name: 'Nahason Abdi Fattah',
     country: 'United Kingdom',
   },
 ];
 
-const TestimonialsSection: React.FC = () => {
+const TestimonialsSection = () => {
   return (
     <Container sx={{ py: 6 }}>
       <Typography variant="h4" align="center" gutterBottom>

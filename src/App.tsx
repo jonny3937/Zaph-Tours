@@ -1,22 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/HOME/Home';
 import Navbar from './components/HOME/Navbar';
-import Hero from './components/HOME/Hero';
-import AboutZaphTours from './components/HOME/AboutZaphTours';
-import FeaturedDestinations from './components/HOME/FeaturedDestinations';
-import TestimonialsSection from './components/HOME/TestimonialsSection';
+import Footer from './components/HOME/Footer';
+import DestinationsPage from './components/Destinations/DestinationsPage';
+import TripTypesPage from './components/TripTypesPage/TripTypesPage';
+import './App.css';
+
 const App: React.FC = () => {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <AboutZaphTours />
-      <FeaturedDestinations />
-      <TestimonialsSection/>
-      
-
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<DestinationsPage />} />
+           <Route path="//trip-types" element={<TripTypesPage />} />
+          
+     
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 
 export default App;
-
