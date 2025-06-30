@@ -29,14 +29,41 @@ const officeHours = [
 
 const ContactUs = () => {
   return (
-    <Box sx={{ p: 4, mt: 10, display: 'flex'}}>
-      <Grid container spacing={4} mt={2}>
+    <Box
+      sx={{
+        px: { xs: 2, md: 8 },
+        py: 6,
+        mt: 8,
+        display: 'flex',
+        justifyContent: 'center',
+        backgroundColor: '#EBD6FB',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <Box textAlign="center" mb={5}>
+        <Typography variant="h4" fontWeight="bold" gutterBottom>
+          Contact Us
+        </Typography>
+        <Typography variant="subtitle1" color="text.secondary">
+          We'd love to hear from you. Reach out today.
+        </Typography>
+      </Box>
+
+      <Grid container spacing={4} justifyContent="center" sx={{width:'40rem'}} >
         <Grid>
-          <Paper sx={{ p: 3, maxWidth: '30rem', ml: 2, maxHeight: '30rem', backgroundColor:'#F4EBD3', }}>
-            <Typography variant="h6">
+          <Paper
+            sx={{
+              p: 3,
+              borderRadius: 3,
+              boxShadow: 3,
+              backgroundColor: '#fff9ef',
+            }}
+          >
+            <Typography variant="h5" fontWeight="bold">
               Send us a Message
             </Typography>
-            <Box component="form" noValidate autoComplete="off">
+            <Box component="form">
               <TextField fullWidth label="Full Name" required margin="normal" />
               <TextField fullWidth label="Email Address" type="email" required margin="normal" />
               <TextField fullWidth label="Subject" required margin="normal" />
@@ -49,16 +76,37 @@ const ContactUs = () => {
                 margin="normal"
                 placeholder="Tell us how we can help you..."
               />
-              <Button variant="contained" color="primary" sx={{ mt: 1 }}>
+              <Button
+                variant="contained"
+                sx={{
+                  mt: 2,
+                  backgroundColor: 'primary',
+                  color: '#fff',
+                  textTransform: 'uppercase',
+                  fontWeight: 'bold',
+                  letterSpacing: 1,
+                  px: 3,
+                  py: 1.5,
+                  borderRadius: 2,
+                }}
+              >
                 Send Message
               </Button>
             </Box>
           </Paper>
         </Grid>
 
-        <Grid>
-          <Paper sx={{ p: 3, mb: 3, minHeight: '20rem' ,backgroundColor:'#F4EBD3' }}>
-            <Typography variant="h6">
+        <Grid sx={{width:'40rem'}}>
+          <Paper
+            sx={{
+              p: 3,
+              borderRadius: 3,
+              boxShadow: 3,
+              backgroundColor: '#fff9ef',
+              mb: 3,
+            }}
+          >
+            <Typography variant="h6" sx={{ mb: 2 }}>
               Get in Touch
             </Typography>
             <List>
@@ -72,15 +120,20 @@ const ContactUs = () => {
               </ListItem>
               <ListItem>
                 <ListItemIcon><TfiLocationPin /></ListItemIcon>
-                <ListItemText
-                  primary="Murang'a University Main Gate"
-                />
+                <ListItemText primary="Murang'a University Main Gate" />
               </ListItem>
             </List>
           </Paper>
 
-          <Paper sx={{ p: 3 ,backgroundColor:'#F4EBD3'}}>
-            <Typography variant="h6">
+          <Paper
+            sx={{
+              p: 3,
+              borderRadius: 3,
+              boxShadow: 3,
+              backgroundColor: '#fff9ef',
+            }}
+          >
+            <Typography variant="h6" sx={{ mb: 2 }}>
               Find Us
             </Typography>
             <Box
@@ -95,7 +148,7 @@ const ContactUs = () => {
                 title="Google Map Location"
                 width="100%"
                 height="100%"
-                style={{ border: 5 }}
+                style={{ border: 0, borderRadius: 8 }}
                 allowFullScreen
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.507567543376!2d37.14243776956892!3d-0.7151076336458907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828996ce41f9c39%3A0xe9bd5117f20559ee!2sM%C5%A9ranga%20University%20Main%20Gate!5e0!3m2!1sen!2ske!4v1751224103265!5m2!1sen!2ske"
               ></iframe>
@@ -103,11 +156,24 @@ const ContactUs = () => {
           </Paper>
         </Grid>
 
-        <Grid>
-          <Paper sx={{ p: 3, mb: 3, width:'30rem',backgroundColor:'#F4EBD3'}}>
-            <Typography variant="h6">
+        <Grid sx={{width:'40rem'}}>
+          <Paper
+            sx={{
+              pl:2,
+              borderRadius: 3,
+              boxShadow: 3,
+              backgroundColor: '#fff9ef',
+              mb: 3,
+              width: '100%',
+              display:'flex'
+            }}
+          >
+            <Box textAlign="center" mb={5}>
+               <Typography variant="h6">
               Office Hours
             </Typography>
+            </Box>
+           
             <List dense>
               {officeHours.map(({ day, hours }) => (
                 <ListItem key={day}>
@@ -117,11 +183,18 @@ const ContactUs = () => {
             </List>
           </Paper>
 
-          <Paper sx={{ p: 3,backgroundColor:'#F4EBD3' }}>
-            <Typography variant="h6">
+          <Paper
+            sx={{
+              p: 3,
+              borderRadius: 3,
+              boxShadow: 3,
+              backgroundColor: '#fff9ef',
+            }}
+          >
+            <Typography variant="h6" sx={{ mb: 2 }}>
               Follow Us
             </Typography>
-            <Box>
+            <Box sx={{ display: 'flex', gap: 2 }}>
               <IconButton href="#" color="primary">
                 <TbBrandFacebookFilled />
               </IconButton>

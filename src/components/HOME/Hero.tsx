@@ -16,23 +16,33 @@ const Hero = () => {
           overflow: 'hidden',
         }}
       >
-        <Box
-          component="video"
-          src="../18974448-uhd_3840_2160_30fps.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: -1,
-          }}
-        />
+ <Box sx={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+  <Box
+    sx={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundImage: 'url(../18974448-uhd_3840_2160_30fps.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      zIndex: -2,
+    }}
+  />
+  <Box
+    sx={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+      zIndex: -1,
+    }}
+  />
+</Box>
+
         <Typography
           variant="h3"
           sx={{
@@ -60,7 +70,7 @@ const Hero = () => {
           variant="contained"
           sx={{
             backgroundColor: '#090040',
-            '&:hover': { backgroundColor: '#06923E' },
+            '&:hover': { backgroundColor: '#212121' },
             color: '#fff',
             fontWeight: 'bold',
             px: 4,
