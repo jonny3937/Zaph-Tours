@@ -15,11 +15,11 @@ const NewsletterSignup = () => {
 
   return (
     <Box sx={{ 
-      backgroundColor: '#F4EBD3', 
+      backgroundColor: '#FEEBF6', 
       py: 6,
-      px: 2, // Add horizontal padding
-      width: '100%', // Ensure full width
-      boxSizing: 'border-box' // Include padding in width calculation
+      px: 2,
+      width: '100%', 
+      boxSizing: 'border-box' 
     }}>
       <Box sx={{ 
         maxWidth: 'sm', 
@@ -49,14 +49,14 @@ const NewsletterSignup = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            fullWidth // Make TextField take full width
+            fullWidth 
           />
           <Button 
             type="submit" 
             variant="outlined" 
             size="large" 
             sx={{ textTransform: 'none' }}
-            fullWidth // Make Button take full width
+            fullWidth
           >
             Subscribe <FaRegBell style={{ marginLeft: 8 }} />
           </Button>

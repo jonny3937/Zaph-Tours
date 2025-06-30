@@ -29,17 +29,10 @@ const officeHours = [
 
 const ContactUs = () => {
   return (
-    <Box sx={{ p: 4 }}>
-      <Typography variant="h4">
-        Contact Us
-      </Typography>
-      <Typography variant="subtitle1">
-        We'd love to hear from you. Get in touch with us today!
-      </Typography>
-
+    <Box sx={{ p: 4, mt: 10, display: 'flex'}}>
       <Grid container spacing={4} mt={2}>
         <Grid>
-          <Paper sx={{ p: 3 }}>
+          <Paper sx={{ p: 3, maxWidth: '30rem', ml: 2, maxHeight: '30rem', backgroundColor:'#F4EBD3', }}>
             <Typography variant="h6">
               Send us a Message
             </Typography>
@@ -56,7 +49,7 @@ const ContactUs = () => {
                 margin="normal"
                 placeholder="Tell us how we can help you..."
               />
-              <Button variant="contained" color="primary" sx={{ mt: 2 }}>
+              <Button variant="contained" color="primary" sx={{ mt: 1 }}>
                 Send Message
               </Button>
             </Box>
@@ -64,7 +57,7 @@ const ContactUs = () => {
         </Grid>
 
         <Grid>
-          <Paper sx={{ p: 3, mb: 3 }}>
+          <Paper sx={{ p: 3, mb: 3, minHeight: '20rem' ,backgroundColor:'#F4EBD3' }}>
             <Typography variant="h6">
               Get in Touch
             </Typography>
@@ -86,7 +79,7 @@ const ContactUs = () => {
             </List>
           </Paper>
 
-          <Paper sx={{ p: 3 }}>
+          <Paper sx={{ p: 3 ,backgroundColor:'#F4EBD3'}}>
             <Typography variant="h6">
               Find Us
             </Typography>
@@ -111,7 +104,7 @@ const ContactUs = () => {
         </Grid>
 
         <Grid>
-          <Paper sx={{ p: 3, mb: 3 , ml: 2, height:'20'}}>
+          <Paper sx={{ p: 3, mb: 3, width:'30rem',backgroundColor:'#F4EBD3'}}>
             <Typography variant="h6">
               Office Hours
             </Typography>
@@ -124,7 +117,7 @@ const ContactUs = () => {
             </List>
           </Paper>
 
-          <Paper sx={{ p: 3 }}>
+          <Paper sx={{ p: 3,backgroundColor:'#F4EBD3' }}>
             <Typography variant="h6">
               Follow Us
             </Typography>
