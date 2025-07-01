@@ -50,6 +50,31 @@ const destinations = [
     soloPrice: '$150',
     link: '#',
   },
+     {
+    image: ' ./2.jpg ',
+    name: 'Victoria, Uganda',
+    description: 'Lorem ipsum dolor sit amet consectetur.',
+    groupPrice: '$2300',
+    soloPrice: '$1350',
+    link: '#',
+  },
+       {
+    image: ' ./3.jpg ',
+    name: 'Victoria, Uganda',
+    description: 'Lorem ipsum dolor sit amet consectetur.',
+    groupPrice: '$2300',
+    soloPrice: '$1350',
+    link: '#',
+  },
+       {
+    image: ' ./4.jpg ',
+    name: 'Victoria, Uganda',
+    description: 'Lorem ipsum dolor sit amet consectetur.',
+    groupPrice: '$2300',
+    soloPrice: '$1350',
+    link: '#',
+  },
+
 ];
 
 const DestinationsPage = () => {

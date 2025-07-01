@@ -48,7 +48,7 @@ const Hero = () => {
           sx={{
             fontWeight: 'bold',
             color: '#fff',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
+            textShadow: '2px 2px 4px rgba(0,0,0,0.3)',
             mb: 2,
             zIndex: 1,
           }}
