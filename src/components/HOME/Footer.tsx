@@ -1,12 +1,10 @@
+import { Box, Grid, Typography, IconButton, Stack, Link } from "@mui/material";
 import {
-  Box,
-  Grid,
-  Typography,
-  IconButton,
-  Stack,
-  Link
-} from '@mui/material';
-import { FaFacebookSquare, FaInstagramSquare, FaYoutube, FaTwitter } from "react-icons/fa";
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutube,
+  FaTwitter,
+} from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAccessTime, MdEmail } from "react-icons/md";
@@ -16,14 +14,13 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#1b1b1b',
-        color: '#fff',
+        backgroundColor: "#1b1b1b",
+        color: "#fff",
         pt: 8,
         pb: 4,
         px: 2,
-        width: '100%',
+        width: "100%",
         margin: 0,
-        
       }}
     >
       <Grid container spacing={4}>
@@ -31,8 +28,9 @@ const Footer = () => {
           <Typography variant="h6" gutterBottom>
             Zaph Tours
           </Typography>
-          <Typography variant="body2" sx={{ color: '#ccc', mb: 2 }}>
-            Kenya's premier safari and adventure company, creating unforgettable experiences since 2008.
+          <Typography variant="body2" sx={{ color: "#ccc", mb: 2 }}>
+            Kenya's premier safari and adventure company, creating unforgettable
+            experiences since 2008.
           </Typography>
           <Stack direction="row" spacing={1}>
             <IconButton aria-label="facebook" color="inherit">
@@ -55,11 +53,13 @@ const Footer = () => {
             Quick Links
           </Typography>
           <Stack spacing={1}>
-            {['Destinations', 'Trip Types', 'About Us', 'Contact', 'Blog'].map((text) => (
-              <Link key={text} href="#" color="inherit" underline="hover">
-                {text}
-              </Link>
-            ))}
+            {["Destinations", "Trip Types", "About Us", "Contact", "Blog"].map(
+              (text) => (
+                <Link key={text} href="#" color="inherit" underline="hover">
+                  {text}
+                </Link>
+              ),
+            )}
           </Stack>
         </Grid>
 
@@ -67,7 +67,7 @@ const Footer = () => {
           <Typography variant="h6" gutterBottom>
             Contact Info
           </Typography>
-          <Stack spacing={1} sx={{ color: '#ccc' }}>
+          <Stack spacing={1} sx={{ color: "#ccc" }}>
             <Stack direction="row" alignItems="center" spacing={1}>
               <CiLocationOn fontSize="small" />
               <Typography variant="body2">Nairobi, Kenya</Typography>
@@ -89,8 +89,9 @@ const Footer = () => {
       </Grid>
 
       <Box mt={5} textAlign="center">
-        <Typography variant="body2" sx={{ color: 'gray' }}>
-          © {new Date().getFullYear()} Zaph Tours. All rights reserved. | Best Safaris and Adventures
+        <Typography variant="body2" sx={{ color: "gray" }}>
+          © {new Date().getFullYear()} Zaph Tours. All rights reserved. | Best
+          Safaris and Adventures
         </Typography>
       </Box>
     </Box>

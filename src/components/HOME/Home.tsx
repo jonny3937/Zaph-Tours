@@ -1,8 +1,8 @@
-import Hero from '../HOME/Hero';
-import AboutZaphTours from '../HOME/AboutZaphTours';
-import FeaturedDestinations from '../HOME/FeaturedDestinations';
-import TestimonialsSection from '../HOME/TestimonialsSection';
-import NewsletterSignup from '..//HOME/NewsletterSignup';
+import Hero from "../HOME/Hero";
+import AboutZaphTours from "../HOME/AboutZaphTours";
+import FeaturedDestinations from "../HOME/FeaturedDestinations";
+import TestimonialsSection from "../HOME/TestimonialsSection";
+import NewsletterSignup from "..//HOME/NewsletterSignup";
 
 const Home = () => {
   return (

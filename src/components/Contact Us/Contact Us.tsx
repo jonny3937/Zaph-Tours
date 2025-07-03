@@ -10,21 +10,22 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
-} from '@mui/material';
+} from "@mui/material";
 import { MdEmail } from "react-icons/md";
 import { FcCellPhone } from "react-icons/fc";
 import { TfiLocationPin } from "react-icons/tfi";
 import { TbBrandFacebookFilled } from "react-icons/tb";
-import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const officeHours = [
-  { day: 'Monday', hours: '9:00 AM - 6:00 PM' },
-  { day: 'Tuesday', hours: '9:00 AM - 6:00 PM' },
-  { day: 'Wednesday', hours: '9:00 AM - 6:00 PM' },
-  { day: 'Thursday', hours: '9:00 AM - 6:00 PM' },
-  { day: 'Friday', hours: '9:00 AM - 5:00 PM' },
-  { day: 'Saturday', hours: '10:00 AM - 3:00 PM' },
-  { day: 'Sunday', hours: 'Closed' },
+  { day: "Monday", hours: "9:00 AM - 6:00 PM" },
+  { day: "Tuesday", hours: "9:00 AM - 6:00 PM" },
+  { day: "Wednesday", hours: "9:00 AM - 6:00 PM" },
+  { day: "Thursday", hours: "9:00 AM - 6:00 PM" },
+  { day: "Friday", hours: "9:00 AM - 5:00 PM" },
+  { day: "Saturday", hours: "10:00 AM - 3:00 PM" },
+  { day: "Sunday", hours: "Closed" },
 ];
 
 const ContactUs = () => {
@@ -34,11 +35,11 @@ const ContactUs = () => {
         px: { xs: 2, md: 8 },
         py: 6,
         mt: 8,
-        display: 'flex',
-        justifyContent: 'center',
-        backgroundColor: '#EBD6FB',
-        flexDirection: 'column',
-        alignItems: 'center',
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "#EBD6FB",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Box textAlign="center" mb={5}>
@@ -50,14 +51,19 @@ const ContactUs = () => {
         </Typography>
       </Box>
 
-      <Grid container spacing={4} justifyContent="center" sx={{width:'40rem'}} >
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        sx={{ width: "40rem" }}
+      >
         <Grid>
           <Paper
             sx={{
               p: 3,
               borderRadius: 3,
               boxShadow: 3,
-              backgroundColor: '#fff9ef',
+              backgroundColor: "#fff9ef",
             }}
           >
             <Typography variant="h5" fontWeight="bold">
@@ -65,7 +71,13 @@ const ContactUs = () => {
             </Typography>
             <Box component="form">
               <TextField fullWidth label="Full Name" required margin="normal" />
-              <TextField fullWidth label="Email Address" type="email" required margin="normal" />
+              <TextField
+                fullWidth
+                label="Email Address"
+                type="email"
+                required
+                margin="normal"
+              />
               <TextField fullWidth label="Subject" required margin="normal" />
               <TextField
                 fullWidth
@@ -80,10 +92,10 @@ const ContactUs = () => {
                 variant="contained"
                 sx={{
                   mt: 2,
-                  backgroundColor: 'primary',
-                  color: '#fff',
-                  textTransform: 'uppercase',
-                  fontWeight: 'bold',
+                  backgroundColor: "primary",
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  fontWeight: "bold",
                   letterSpacing: 1,
                   px: 3,
                   py: 1.5,
@@ -96,13 +108,13 @@ const ContactUs = () => {
           </Paper>
         </Grid>
 
-        <Grid sx={{width:'40rem'}}>
+        <Grid sx={{ width: "40rem" }}>
           <Paper
             sx={{
               p: 3,
               borderRadius: 3,
               boxShadow: 3,
-              backgroundColor: '#fff9ef',
+              backgroundColor: "#fff9ef",
               mb: 3,
             }}
           >
@@ -111,15 +123,21 @@ const ContactUs = () => {
             </Typography>
             <List>
               <ListItem>
-                <ListItemIcon><MdEmail /></ListItemIcon>
+                <ListItemIcon>
+                  <MdEmail />
+                </ListItemIcon>
                 <ListItemText primary="zaphtourswithmaish@gmail.com" />
               </ListItem>
               <ListItem>
-                <ListItemIcon><FcCellPhone /></ListItemIcon>
+                <ListItemIcon>
+                  <FcCellPhone />
+                </ListItemIcon>
                 <ListItemText primary="+254 702 680 621" />
               </ListItem>
               <ListItem>
-                <ListItemIcon><TfiLocationPin /></ListItemIcon>
+                <ListItemIcon>
+                  <TfiLocationPin />
+                </ListItemIcon>
                 <ListItemText primary="Murang'a University Main Gate" />
               </ListItem>
             </List>
@@ -130,7 +148,7 @@ const ContactUs = () => {
               p: 3,
               borderRadius: 3,
               boxShadow: 3,
-              backgroundColor: '#fff9ef',
+              backgroundColor: "#fff9ef",
             }}
           >
             <Typography variant="h6" sx={{ mb: 2 }}>
@@ -139,7 +157,7 @@ const ContactUs = () => {
             <Box
               sx={{
                 borderRadius: 2,
-                overflow: 'hidden',
+                overflow: "hidden",
                 height: 250,
                 mt: 1,
               }}
@@ -156,24 +174,22 @@ const ContactUs = () => {
           </Paper>
         </Grid>
 
-        <Grid sx={{width:'40rem'}}>
+        <Grid sx={{ width: "40rem" }}>
           <Paper
             sx={{
-              pl:2,
+              pl: 2,
               borderRadius: 3,
               boxShadow: 3,
-              backgroundColor: '#fff9ef',
+              backgroundColor: "#fff9ef",
               mb: 3,
-              width: '100%',
-              display:'flex'
+              width: "100%",
+              display: "flex",
             }}
           >
             <Box textAlign="center" mb={5}>
-               <Typography variant="h6">
-              Office Hours
-            </Typography>
+              <Typography variant="h6">Office Hours</Typography>
             </Box>
-           
+
             <List dense>
               {officeHours.map(({ day, hours }) => (
                 <ListItem key={day}>
@@ -188,21 +204,27 @@ const ContactUs = () => {
               p: 3,
               borderRadius: 3,
               boxShadow: 3,
-              backgroundColor: '#fff9ef',
+              backgroundColor: "#fff9ef",
             }}
           >
             <Typography variant="h6" sx={{ mb: 2 }}>
               Follow Us
             </Typography>
-            <Box sx={{ display: 'flex', gap: 2 }}>
+            <Box sx={{ display: "flex", gap: 2 }}>
               <IconButton href="#" color="primary">
                 <TbBrandFacebookFilled />
               </IconButton>
-              <IconButton href="#" color="primary">
-                <FaTwitter />
+              <IconButton href="#" sx={{ color: "#E55050" }}>
+                <FaInstagramSquare />
               </IconButton>
               <IconButton href="#" color="primary">
                 <FaLinkedin />
+              </IconButton>
+              <IconButton href="#" sx={{ color: "#000000" }}>
+                <BsTwitterX />
+              </IconButton>
+              <IconButton href="#" sx={{ color: "#E55055" }}>
+                <FaYoutube />
               </IconButton>
             </Box>
           </Paper>

@@ -1,36 +1,41 @@
-import React, { useState } from 'react';
-import { Box, Typography, TextField, Button, Alert } from '@mui/material';
+import React, { useState } from "react";
+import { Box, Typography, TextField, Button, Alert } from "@mui/material";
 import { FaRegBell } from "react-icons/fa";
 
 const NewsletterSignup = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setSubmitted(true);
-    setEmail('');
+    setEmail("");
   };
 
   return (
-    <Box sx={{ 
-      backgroundColor: '#FEEBF6', 
-      py: 6,
-      px: 2,
-      width: '100%', 
-      boxSizing: 'border-box' 
-    }}>
-      <Box sx={{ 
-        maxWidth: 'sm', 
-        margin: '0 auto',
-        width: '100%'
-      }}>
+    <Box
+      sx={{
+        backgroundColor: "#FEEBF6",
+        py: 6,
+        px: 2,
+        width: "100%",
+        boxSizing: "border-box",
+      }}
+    >
+      <Box
+        sx={{
+          maxWidth: "sm",
+          margin: "0 auto",
+          width: "100%",
+        }}
+      >
         <Typography variant="h4" align="center" gutterBottom>
           Stay Updated on Adventures
         </Typography>
         <Typography variant="body1" align="center" mb={3}>
-          Subscribe to our newsletter for weekly updates on safaris, adventures, and exclusive deals
+          Subscribe to our newsletter for weekly updates on safaris, adventures,
+          and exclusive deals
         </Typography>
         {submitted && (
           <Alert severity="success" sx={{ mb: 2 }}>
@@ -40,7 +45,7 @@ const NewsletterSignup = () => {
         <Box
           component="form"
           onSubmit={handleSubmit}
-          sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
+          sx={{ display: "flex", flexDirection: "column", gap: 2 }}
         >
           <TextField
             type="email"
@@ -49,13 +54,13 @@ const NewsletterSignup = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            fullWidth 
+            fullWidth
           />
-          <Button 
-            type="submit" 
-            variant="outlined" 
-            size="large" 
-            sx={{ textTransform: 'none' }}
+          <Button
+            type="submit"
+            variant="outlined"
+            size="large"
+            sx={{ textTransform: "none" }}
             fullWidth
           >
             Subscribe <FaRegBell style={{ marginLeft: 8 }} />
