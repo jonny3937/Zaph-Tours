@@ -8,7 +8,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { useMediaQuery, Menu, MenuItem, IconButton } from '@mui/material';
 import { TiThMenuOutline } from "react-icons/ti";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
